@@ -213,10 +213,6 @@
   },
   {
    "binding" : "weak",
-   "name" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_019BufferStatusMessageELNS0_8MQFlavorE1EE17unmapGrantorDescrEPvj"
-  },
-  {
-   "binding" : "weak",
    "name" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_019BufferStatusMessageELNS0_8MQFlavorE1EE4readEPS5_j"
   },
   {
@@ -242,10 +238,6 @@
   {
    "binding" : "weak",
    "name" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_025BufferInvalidationMessageELNS0_8MQFlavorE2EE15mapGrantorDescrEj"
-  },
-  {
-   "binding" : "weak",
-   "name" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_025BufferInvalidationMessageELNS0_8MQFlavorE2EE17unmapGrantorDescrEPvj"
   },
   {
    "binding" : "weak",
@@ -1799,26 +1791,6 @@
    "source_file" : "/system/libfmq/include/fmq/MessageQueue.h"
   },
   {
-   "access" : "private",
-   "function_name" : "android::hardware::MessageQueue<android::hardware::media::bufferpool::V2_0::BufferStatusMessage, android::hardware::kSynchronizedReadWrite>::unmapGrantorDescr",
-   "linker_set_key" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_019BufferStatusMessageELNS0_8MQFlavorE1EE17unmapGrantorDescrEPvj",
-   "parameters" :
-   [
-    {
-     "is_this_ptr" : true,
-     "referenced_type" : "type-619"
-    },
-    {
-     "referenced_type" : "type-69"
-    },
-    {
-     "referenced_type" : "type-13"
-    }
-   ],
-   "return_type" : "type-70",
-   "source_file" : "/system/libfmq/include/fmq/MessageQueue.h"
-  },
-  {
    "function_name" : "android::hardware::MessageQueue<android::hardware::media::bufferpool::V2_0::BufferStatusMessage, android::hardware::kSynchronizedReadWrite>::read",
    "linker_set_key" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_019BufferStatusMessageELNS0_8MQFlavorE1EE4readEPS5_j",
    "parameters" :
@@ -1941,26 +1913,6 @@
     }
    ],
    "return_type" : "type-69",
-   "source_file" : "/system/libfmq/include/fmq/MessageQueue.h"
-  },
-  {
-   "access" : "private",
-   "function_name" : "android::hardware::MessageQueue<android::hardware::media::bufferpool::V2_0::BufferInvalidationMessage, android::hardware::kUnsynchronizedWrite>::unmapGrantorDescr",
-   "linker_set_key" : "_ZN7android8hardware12MessageQueueINS0_5media10bufferpool4V2_025BufferInvalidationMessageELNS0_8MQFlavorE2EE17unmapGrantorDescrEPvj",
-   "parameters" :
-   [
-    {
-     "is_this_ptr" : true,
-     "referenced_type" : "type-620"
-    },
-    {
-     "referenced_type" : "type-69"
-    },
-    {
-     "referenced_type" : "type-13"
-    }
-   ],
-   "return_type" : "type-70",
    "source_file" : "/system/libfmq/include/fmq/MessageQueue.h"
   },
   {
