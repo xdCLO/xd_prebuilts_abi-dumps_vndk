@@ -13,6 +13,16 @@
  "builtin_types" :
  [
   {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIDs",
+   "name" : "char16_t",
+   "referenced_type" : "_ZTIDs",
+   "self_type" : "_ZTIDs",
+   "size" : 2
+  },
+  {
    "alignment" : 1,
    "is_integral" : true,
    "linker_set_key" : "_ZTIa",
@@ -405,6 +415,27 @@
   },
   {
    "name" : "str_parms_to_str"
+  },
+  {
+   "name" : "strcpy8to16"
+  },
+  {
+   "name" : "strcpylen8to16"
+  },
+  {
+   "name" : "strdup8to16"
+  },
+  {
+   "name" : "strlen8to16"
+  },
+  {
+   "name" : "strncpy16to8"
+  },
+  {
+   "name" : "strndup16to8"
+  },
+  {
+   "name" : "strnlen16to8"
   },
   {
    "name" : "thread_store_get"
@@ -2059,6 +2090,120 @@
    "source_file" : "/system/core/libcutils/include/cutils/str_parms.h"
   },
   {
+   "function_name" : "strcpy8to16",
+   "linker_set_key" : "strcpy8to16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPDs"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIPDs",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strcpylen8to16",
+   "linker_set_key" : "strcpylen8to16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPDs"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIPDs",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strdup8to16",
+   "linker_set_key" : "strdup8to16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIPDs",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strlen8to16",
+   "linker_set_key" : "strlen8to16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strncpy16to8",
+   "linker_set_key" : "strncpy16to8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKDs"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strndup16to8",
+   "linker_set_key" : "strndup16to8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKDs"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "function_name" : "strnlen16to8",
+   "linker_set_key" : "strnlen16to8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKDs"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
    "function_name" : "thread_store_get",
    "linker_set_key" : "thread_store_get",
    "parameters" :
@@ -2256,6 +2401,15 @@
   },
   {
    "alignment" : 4,
+   "linker_set_key" : "_ZTIPDs",
+   "name" : "char16_t *",
+   "referenced_type" : "_ZTIDs",
+   "self_type" : "_ZTIPDs",
+   "size" : 4,
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
+  },
+  {
+   "alignment" : 4,
    "linker_set_key" : "_ZTIPFbPvS_E",
    "name" : "bool (*)(void *, void *)",
    "referenced_type" : "_ZTIFbPvS_E",
@@ -2334,6 +2488,15 @@
    "self_type" : "_ZTIPK5iovec#ODR:",
    "size" : 4,
    "source_file" : "/system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKDs",
+   "name" : "const char16_t *",
+   "referenced_type" : "_ZTIKDs",
+   "self_type" : "_ZTIPKDs",
+   "size" : 4,
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
   },
   {
    "alignment" : 4,
@@ -2448,6 +2611,16 @@
    "self_type" : "_ZTIK5iovec",
    "size" : 8,
    "source_file" : "/system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKDs",
+   "name" : "const char16_t",
+   "referenced_type" : "_ZTIDs",
+   "self_type" : "_ZTIKDs",
+   "size" : 2,
+   "source_file" : "/system/core/libcutils/include/cutils/jstring.h"
   },
   {
    "alignment" : 1,
